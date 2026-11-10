@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support · HEIC Photo Viewer &amp; Converter</title>
+<meta name="description" content="Help, answers and contact for HEIC Photo Viewer & Converter for Windows.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Crect x='32' y='32' width='448' height='448' rx='108' fill='%234D7C0F'/%3E%3Crect x='118' y='150' width='276' height='220' rx='38' fill='%23fff'/%3E%3Ccircle cx='318' cy='210' r='26' fill='%23FFB020'/%3E%3Cpath d='M118 330 L196 252 Q208 240 220 252 L270 302 L298 276 Q310 264 322 276 L394 346 L394 332 Q394 370 356 370 L156 370 Q118 370 118 332 Z' fill='%23B9D98A'/%3E%3C/svg%3E">
+<style>
+  :root {
+    --bg: #f7f8f5; --surface: #ffffff; --text: #1c1f1a; --muted: #5b6355; --line: #e3e7de;
+    --brand: #4d7c0f; --link: #3f6a08; --chip: #eef5e3;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #15171a; --surface: #1e2124; --text: #eceee9; --muted: #a7ae9f; --line: #30353a;
+      --brand: #a3d65c; --link: #b5e07a; --chip: #26301b;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 16px/1.65 "Segoe UI Variable Text", "Segoe UI", system-ui, -apple-system, sans-serif;
+  }
+  a { color: var(--link); text-underline-offset: 2px; }
+  a:hover { text-decoration-thickness: 2px; }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 0 16px; }
+  header { border-bottom: 1px solid var(--line); background: var(--surface); }
+  header .wrap { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; padding-top: 14px; padding-bottom: 14px; }
+  .brand { display: flex; align-items: center; gap: 10px; color: var(--text); text-decoration: none; font-weight: 600; margin-right: auto; }
+  .brand svg { width: 32px; height: 32px; flex: none; }
+  nav { display: flex; gap: 18px; font-size: 15px; }
+  nav a { color: var(--muted); text-decoration: none; }
+  nav a:hover, nav a[aria-current="page"] { color: var(--text); }
+  main.wrap { padding-top: 40px; padding-bottom: 56px; }
+  h1 { font-size: clamp(28px, 6vw, 36px); line-height: 1.2; margin: 0 0 8px; letter-spacing: -0.01em; }
+  h2 { font-size: 20px; margin: 40px 0 12px; }
+  .lead { color: var(--muted); margin: 0 0 24px; }
+  .contact { background: var(--chip); border-radius: 14px; padding: 18px 20px; }
+  .contact p { margin: 0 0 8px; }
+  .contact ul { margin: 0; padding-left: 20px; }
+  .email { font-size: 18px; font-weight: 600; }
+  li { margin: 4px 0; }
+  details { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 0 18px; margin: 0 0 10px; }
+  summary { cursor: pointer; font-weight: 600; padding: 14px 0; list-style: none; display: flex; gap: 12px; align-items: baseline; }
+  summary::-webkit-details-marker { display: none; }
+  summary::before { content: ""; flex: none; width: 7px; height: 7px; border-right: 2px solid var(--muted); border-bottom: 2px solid var(--muted); transform: translateY(-2px) rotate(-45deg); transition: transform .15s ease; }
+  details[open] summary::before { transform: translateY(-4px) rotate(45deg); }
+  @media (prefers-reduced-motion: reduce) { summary::before { transition: none; } }
+  details[open] summary { border-bottom: 1px solid var(--line); margin-bottom: 10px; }
+  details > :not(summary) { margin-top: 0; }
+  details > :last-child { margin-bottom: 16px; }
+  table { width: 100%; border-collapse: collapse; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; font-size: 15px; }
+  th, td { text-align: left; padding: 9px 14px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  tr:last-child td { border-bottom: 0; }
+  th { color: var(--muted); font-weight: 600; background: var(--chip); }
+  kbd { font: 13px/1.4 ui-monospace, "Cascadia Code", Consolas, monospace; background: var(--bg); border: 1px solid var(--line); border-bottom-width: 2px; border-radius: 6px; padding: 1px 6px; white-space: nowrap; }
+  footer { border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
+  footer .wrap { padding-top: 20px; padding-bottom: 28px; display: flex; gap: 8px 18px; flex-wrap: wrap; }
+  footer a { color: var(--muted); }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a class="brand" href="./">
+      <svg viewBox="0 0 512 512" aria-hidden="true"><rect x="32" y="32" width="448" height="448" rx="108" fill="#4D7C0F"/><rect x="150" y="118" width="232" height="186" rx="34" fill="#fff" fill-opacity=".35"/><rect x="118" y="150" width="276" height="220" rx="38" fill="#fff"/><circle cx="318" cy="210" r="26" fill="#FFB020"/><path d="M118 330 L196 252 Q208 240 220 252 L270 302 L298 276 Q310 264 322 276 L394 346 L394 332 Q394 370 356 370 L156 370 Q118 370 118 332 Z" fill="#B9D98A"/><path d="M118 346 L196 268 Q208 256 220 268 L300 348 Q322 370 294 370 L156 370 Q118 370 118 346 Z" fill="#4D7C0F"/></svg>
+      HEIC Photo Viewer &amp; Converter
+    </a>
+    <nav aria-label="Site">
+      <a href="./">Home</a>
+      <a href="support" aria-current="page">Support</a>
+      <a href="privacy">Privacy</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <h1>Support</h1>
+  <p class="lead">Answers to common questions, and how to reach the developer.</p>
+
+  <div class="contact">
+    <p>Something not working, or an idea for the app? Email:</p>
+    <p class="email"><a href="mailto:yvanderio@hotmail.com?subject=HEIC%20Photo%20Viewer%20%26%20Converter">yvanderio@hotmail.com</a></p>
+    <p>To get help faster, please include:</p>
+    <ul>
+      <li>The app version, shown in <em>Settings → About</em>.</li>
+      <li>Your Windows version (for example, Windows 11 24H2).</li>
+      <li>What you did, what you expected, and what happened instead.</li>
+      <li>If a particular photo won't open, attaching it helps. Only send it if you're comfortable sharing it.</li>
+    </ul>
+  </div>
+
+  <h2>Frequently asked questions</h2>
+
+  <details>
+    <summary>Which files can the app open?</summary>
+    <p>HEIC and HEIF photos from iPhones and modern cameras (<code>.heic</code>, <code>.heif</code>, <code>.hif</code>, and the burst formats <code>.heics</code> and <code>.heifs</code>), plus AVIF. It also opens JPG, PNG, WebP, JPEG XL, TIFF, BMP and GIF images.</p>
+  </details>
+
+  <details>
+    <summary>Do I need to install the HEVC or HEIF extensions from Microsoft?</summary>
+    <p>No. The app has its own decoder, so HEIC photos open without any extra codecs, including the paid HEVC Video Extensions.</p>
+  </details>
+
+  <details>
+    <summary>How do I convert photos to JPG, PNG or another format?</summary>
+    <p>Open the <em>Convert</em> page from the left bar. Drop photos or whole folders onto it, or use <em>Browse photos</em> / <em>Choose folder</em>. Then choose:</p>
+    <ul>
+      <li><strong>Format:</strong> JPG, PNG, WebP, AVIF, JPEG XL, TIFF, BMP or GIF.</li>
+      <li><strong>Quality</strong> and <strong>size</strong>.</li>
+      <li><strong>Photo details:</strong> keep everything, remove the location (recommended), or remove all details.</li>
+      <li><strong>Where to save</strong>, and what to do if a file with the same name already exists.</li>
+    </ul>
+    <p>Your originals are never changed. To convert a single photo you're viewing, use the save button at the top right, or press <kbd>Ctrl</kbd>+<kbd>S</kbd>.</p>
+  </details>
+
+  <details>
+    <summary>How do I open HEIC photos with a double-click?</summary>
+    <p>In the app, go to <em>Settings → Windows → Make HEIC Photo Viewer &amp; Converter your default photo app for HEIC</em>. Windows Settings opens. Select <code>.heic</code> (and <code>.heif</code> if you like) and choose <em>HEIC Photo Viewer &amp; Converter</em>.</p>
+  </details>
+
+  <details>
+    <summary>Why don't I see previews (thumbnails) of my HEIC photos in File Explorer?</summary>
+    <p>The app draws HEIC thumbnails in File Explorer when it's your default app for HEIC photos (see the previous question). Make sure File Explorer is set to show medium, large or extra-large icons.</p>
+    <p>Explorer remembers thumbnails it made before. If some photos still show old icons, clear them: open <em>Disk Cleanup</em> from the Start menu, tick <em>Thumbnails</em>, and select <em>OK</em>.</p>
+  </details>
+
+  <details>
+    <summary>A photo won't open. What can I do?</summary>
+    <p>Select <em>Try again</em>. If it still fails, the file may be damaged, incomplete (for example, still syncing from the cloud), or use a variant of the format the app doesn't support yet. Please email it, if you're comfortable sharing it, so it can be fixed.</p>
+  </details>
+
+  <details>
+    <summary>Does the app upload my photos or track me?</summary>
+    <p>No. Everything happens on your PC, and the app makes no internet connections of its own. See the <a href="privacy">Privacy Policy</a> for details.</p>
+  </details>
+
+  <details>
+    <summary>Where does the app keep its data, and how do I reset it?</summary>
+    <p>Settings, recent items, conversion history and the thumbnail cache live in the app's private folder. <em>Settings → Privacy &amp; storage</em> lets you clear recent items or the thumbnail cache, and open the folder. Uninstalling the app removes everything.</p>
+  </details>
+
+  <details>
+    <summary>What are the system requirements?</summary>
+    <p>Windows 10 version 2004 (build 19041) or later, or Windows 11, on an x64 or ARM64 PC.</p>
+  </details>
+
+  <h2>Keyboard shortcuts</h2>
+  <table>
+    <thead><tr><th>Shortcut</th><th>Action</th></tr></thead>
+    <tbody>
+      <tr><td><kbd>Ctrl</kbd>+<kbd>O</kbd></td><td>Open photos</td></tr>
+      <tr><td><kbd>←</kbd> <kbd>→</kbd> or <kbd>Page Up</kbd> <kbd>Page Down</kbd></td><td>Previous / next photo in the folder (when zoomed in, the arrow keys move around the photo instead)</td></tr>
+      <tr><td><kbd>Home</kbd> / <kbd>End</kbd></td><td>First / last photo in the folder</td></tr>
+      <tr><td><kbd>+</kbd> / <kbd>−</kbd></td><td>Zoom in / out</td></tr>
+      <tr><td><kbd>Ctrl</kbd>+<kbd>0</kbd></td><td>Fit to window</td></tr>
+      <tr><td><kbd>Ctrl</kbd>+<kbd>1</kbd></td><td>Actual size (100%)</td></tr>
+      <tr><td><kbd>Ctrl</kbd>+<kbd>R</kbd> / <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>R</kbd></td><td>Rotate right / left</td></tr>
+      <tr><td><kbd>Ctrl</kbd>+<kbd>I</kbd></td><td>Show or hide photo details</td></tr>
+      <tr><td><kbd>Ctrl</kbd>+<kbd>S</kbd></td><td>Save a copy in your default format</td></tr>
+      <tr><td><kbd>Ctrl</kbd>+<kbd>E</kbd></td><td>Save a copy with other options</td></tr>
+      <tr><td><kbd>Ctrl</kbd>+<kbd>C</kbd></td><td>Copy the image</td></tr>
+      <tr><td><kbd>F11</kbd> / <kbd>Esc</kbd></td><td>Enter / leave full screen</td></tr>
+      <tr><td><kbd>Delete</kbd></td><td>Delete the photo (to the Recycle Bin on your PC's own drives; the app warns you first when a drive has no Recycle Bin)</td></tr>
+    </tbody>
+  </table>
+  <p>With the mouse, double-click a photo to switch between <em>fit</em> and <em>actual size</em>, and drag to move around a zoomed photo.</p>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Yvan Ngneunmeu</span>
+    <a href="support">Support</a>
+    <a href="privacy">Privacy Policy</a>
+  </div>
+</footer>
+</body>
+</html>
